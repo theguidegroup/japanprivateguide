@@ -109,7 +109,7 @@ a:hover {
   right: 0;
   top: 100%;
   z-index: 9999;
-  min-width: 100%;
+  min-width: 100px;
   box-sizing: border-box;
 }
 
