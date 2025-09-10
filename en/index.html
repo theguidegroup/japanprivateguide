@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japan Private Guide 日本ガイドマップ</title>
+  <base href="/">
+  <link rel="alternate" hreflang="en" href="https://japanprivateguide.com/en">
+  <link rel="alternate" hreflang="ja" href="https://japanprivateguide.com/ja">
+  <link rel="alternate" hreflang="ko" href="https://japanprivateguide.com/ko">
+  <link rel="alternate" hreflang="zh-TW" href="https://japanprivateguide.com/zh-tw">
+  <link rel="alternate" hreflang="x-default" href="https://japanprivateguide.com/en">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+<body>
+<div class="bg-left"></div>
+<div class="bg-right"></div>
+<div class="bg-left2"></div>
+<div class="snow-container"></div>
+<header class="navbar" style="display: none;">
+  <div class="nav-right">
+    <a href="#" onclick="scrollToCategory('all'); return false;" class="nav-link">全国ガイドパック</a>
+    <a href="#" onclick="scrollToCategory('vehicle'); return false;" class="nav-link">観光貸切車</a>
+    <a href="#" onclick="scrollToCategory('tokyo'); return false;" class="nav-link">東京</a>
+    <a href="#" onclick="scrollToCategory('osaka'); return false;" class="nav-link">大阪</a>
+    <a href="#" onclick="scrollToCategory('kyoto'); return false;" class="nav-link">京都</a>
+    <a href="#" onclick="scrollToCategory('fukuoka'); return false;" class="nav-link">福岡</a>
+    <a href="#" onclick="scrollToCategory('hokkaido'); return false;" class="nav-link">北海道</a>
+    <a href="#" onclick="scrollToCategory('okinawa'); return false;" class="nav-link">沖縄</a>
+    <a href="#" onclick="scrollToCategory('stories'); return false;" class="nav-link">お客様の声</a>
+    <a href="ja/faq" target="_blank" class="btn btn-b">よくあるご質問</a>
+    <a href="ja/contact" target="_blank" class="btn btn-a">お問い合わせ</a>
+  </div>
+</header>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="img/icon.png" class="nav-logo">
+    <div class="logo-container">
+      <img src="img/japan-private-guide_logo.png" class="logo-image japan-private-guide" draggable="false">
+      <img src="img/the-guide-group_en.png" class="logo-image the-guide-group" draggable="false">
+    </div>
+    <div class="lang-wrapper" id="lang-wrapper">
+    <div id="lang-toggle">
+      <img class="lang-flag" src="img/lang.png">
+      <span>English &#9662;</span>
+    </div>
+    <div id="lang-dropdown">
+      <ul>
+        <li><a href="en"><img class="lang-flag" src="https://flagcdn.com/w80/us.png">English</a></li>
+        <li><a href="ja"><img class="lang-flag" src="https://flagcdn.com/w80/jp.png">日本語</a></li>
+        <li><a href="ko"><img class="lang-flag" src="https://flagcdn.com/w80/kr.png">한국어</a></li>
+        <li><a href="zh-tw"><img class="lang-flag" src="https://flagcdn.com/w80/tw.png">繁體中文</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+<div class="mobile-controls">
+<a href="https://example.com/cart" class="cart-link"><img src="img/cart.png" class="cart-image"></a>
+  <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+  <div class="nav-right">
+    <a href="#" onclick="scrollToCategory('all'); return false;" class="nav-link">全国ガイドパック</a>
+    <a href="#" onclick="scrollToCategory('vehicle'); return false;" class="nav-link">観光貸切車</a>
+    <a href="#" onclick="scrollToCategory('tokyo'); return false;" class="nav-link">東京</a>
+    <a href="#" onclick="scrollToCategory('osaka'); return false;" class="nav-link">大阪</a>
+    <a href="#" onclick="scrollToCategory('kyoto'); return false;" class="nav-link">京都</a>
+    <a href="#" onclick="scrollToCategory('fukuoka'); return false;" class="nav-link">福岡</a>
+    <a href="#" onclick="scrollToCategory('hokkaido'); return false;" class="nav-link">北海道</a>
+    <a href="#" onclick="scrollToCategory('okinawa'); return false;" class="nav-link">沖縄</a>
+    <a href="#" onclick="scrollToCategory('stories'); return false;" class="nav-link">お客様の声</a>
+    <a href="ja/faq" target="_blank" class="btn btn-b">よくあるご質問</a>
+    <a href="ja/contact" target="_blank" class="btn btn-a">お問い合わせ</a>
+    <a href="https://example.com/cart" class="cart-link"><img src="img/cart.png" class="cart-image"></a>
+  </div>
+</header>
+
+<div class="scroll-wrapper">
+  <div class="scroll-track">
+
+    <div class="carousel-img" data-caption="浅草寺">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/senso-ji.jpg" alt="浅草寺">
+        <div class="caption">浅草寺<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="富士山">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/fuji-san.jpg" alt="富士山">
+        <div class="caption">富士山<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="東京タワー">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/tokyo-tower.jpg" alt="東京タワー">
+        <div class="caption">東京タワー<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="六本木">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/roppongi.jpg" alt="六本木">
+        <div class="caption">六本木<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="銀座">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/ginza.jpg" alt="銀座">
+        <div class="caption">銀座<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="東京ディズニー">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/tokyo-disneyland.jpg" alt="東京ディズニーランド">
+        <div class="caption">東京ディズニーランド<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="東京スカイツリー">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/skytree.jpg" alt="東京スカイツリー">
+        <div class="caption">東京スカイツリー<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="大阪城">
+      <a onclick="scrollToCategory('osaka');">
+        <img src="img/attractions/osaka-castle.jpg" alt="大阪城">
+        <div class="caption">大阪城<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="鎌倉大仏">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/kamakura-daibutsu.jpg" alt="鎌倉大仏">
+        <div class="caption">鎌倉大仏<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="新倉山浅間公園">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/arakurayama-sengen-park.jpg" alt="新倉山浅間公園">
+        <div class="caption">新倉山浅間公園<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="明治神宮">
+      <a onclick="scrollToCategory('tokyo');">
+        <img src="img/attractions/meiji-shrine.jpg" alt="明治神宮">
+        <div class="caption">明治神宮<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="厳島神社">
+      <a onclick="scrollToCategory('osaka');">
+        <img src="img/attractions/itsukushima-shrine.jpg" alt="厳島神社">
+        <div class="caption">厳島神社<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="伏見稲荷大社">
+      <a onclick="scrollToCategory('kyoto');">
+        <img src="img/attractions/fushimi-inari.jpg" alt="伏見稲荷大社">
+        <div class="caption">伏見稲荷大社<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="金閣寺">
+      <a onclick="scrollToCategory('kyoto');">
+        <img src="img/attractions/kinkaku‑ji.jpg" alt="金閣寺">
+        <div class="caption">金閣寺<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="清水寺">
+      <a onclick="scrollToCategory('kyoto');">
+        <img src="img/attractions/kiyomizu-dera.jpg" alt="清水寺">
+        <div class="caption">清水寺<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+    <div class="carousel-img" data-caption="奈良公園">
+      <a onclick="scrollToCategory('osaka');">
+        <img src="img/attractions/nara-park.jpg" alt="奈良公園">
+        <div class="caption">奈良公園<br>付近のプライベートガイド</div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div style="height: 200px;"></div>
+<div class="city-guides" style="text-align: center;">
+<div class="attractions-3d">
+  <div class="attraction-item">
+    <a href="https://gyg.me/aaZgr9kM" target="_blank">
+      <img src="img/icon-itsukushima-shrine.png" alt="厳島神社">
+      <p>厳島神社<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/HZDlwIWU" target="_blank">
+      <img src="img/icon-senso-ji.png" alt="浅草寺">
+      <p>浅草寺<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/jWLPYn5W" target="_blank">
+      <img src="img/icon-kamakura-daibutsu.png" alt="鎌倉大仏">
+      <p>鎌倉大仏<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/XiJZSjcd" target="_blank">
+      <img src="img/icon-fuji-san.png" alt="富士山ツアー">
+      <p>富士山ツアー<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/I5MzgGDg" target="_blank">
+      <img src="img/icon-tokyo-tower.png" alt="東京タワー">
+      <p>東京タワー<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/1hDvKz1A" target="_blank">
+      <img src="img/icon-tokyo-disneyland.png" alt="東京ディズニーランド">
+      <p>東京ディズニー<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/8R0UVLkr" target="_blank">
+      <img src="img/icon-sightseeing-bus.png" alt="観光バス">
+      <p>観光バス<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/grzhpFxX" target="_blank">
+      <img src="img/icon-go-kart.png" alt="カート体験">
+      <p>カート体験<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/Kt5OUZeF" target="_blank">
+      <img src="img/icon-osaka-castle.png" alt="大阪城">
+      <p>大阪城<br>チケット予約</p>
+    </a>
+  </div>
+  <div class="attraction-item">
+    <a href="https://gyg.me/4Occewa0" target="_blank">
+      <img src="img/icon-todai-ji.png" alt="東大寺">
+      <p>東大寺<br>チケット予約</p>
+    </a>
+  </div>
+</div>
+
+<div id="all"></div>
+<div id="map-container">
+<h2>2025 全国対応・政府公認の人気高級プライベート観光ガイドパック</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 5.0　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/men/40.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div><br>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/rNwWaAlFagc?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-away"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Tanaka</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　高く推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　高く推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　高く推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-away"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 那覇</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 首里城</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 恩納村</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 古宇利島</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 本部町</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.5　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.5　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-away"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.5　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 名古屋</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 高山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 伊勢</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 白川郷</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 下呂</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+</div>
+</div>
+<p></p>
+
+<img src="img/private-charter-ja.png" alt="Book a private tour vehicle with driver for your group and guide!" style="width: 100%; max-width: 1080px; height: auto;">
+
+<div id="vehicle"></div>
+<div id="map-container">
+<h2>2025 エリア対応・観光に最適な専属ドライバー付き高級貸切バン</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/toyota-alphard.png" width="220">
+    <div class="guide-name">トヨタ アルファード<br>東京と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/mercedes-v-class.png" width="220">
+    <div class="guide-name">メルセデス・ベンツ Vクラス<br>東京と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 東京</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富士山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 横浜</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 箱根</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 日光</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/toyota-alphard.png" width="220">
+    <div class="guide-name">トヨタ アルファード<br>大阪と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/mercedes-v-class.png" width="220">
+    <div class="guide-name">メルセデス・ベンツ Vクラス<br>大阪と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 大阪</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 京都</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 神戸</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 奈良</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 和歌山</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/toyota-alphard.png" width="220">
+    <div class="guide-name">トヨタ アルファード<br>名古屋と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 名古屋</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 高山</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 伊勢</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 白川郷</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 下呂</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/toyota-alphard.png" width="220">
+    <div class="guide-name">トヨタ アルファード<br>福岡と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 福岡</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 長崎</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 別府</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 湯布院</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 熊本</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/toyota-alphard.png" width="220">
+    <div class="guide-name">トヨタ アルファード<br>北海道と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 札幌</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 小樽</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 富良野</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 美瑛</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 旭川</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+  <div class="guide-rating level-priority toggle-tooltip">
+    🧑‍✈️ 6名乗客と運転手
+    <span class="tooltip-icon tooltip-icon-vehicle-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-vehicle">✔ プロドライバー</div>
+  <div class="guide-content">
+    <img src="img/toyota-alphard.png" width="220">
+    <div class="guide-name">トヨタ アルファード<br>那覇と周辺都市</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="img/coordinates.png"> 那覇</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 首里城</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 恩納村</span>
+      <span class="break"></span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 古宇利島</span>
+      <span class="lang-tag"><img src="img/coordinates.png"> 本部町</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間チャーター</div>
+    <div class="guide-price">20,000円 - 6時間チャーター</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は一部前金のみでOK<br>
+      残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="tokyo"></div>
+<div id="map-container">
+<h2>東京の人気政府公認観光ガイド一覧</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 5.0　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/men/40.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 5.0　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/men/40.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　高く推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　高く推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-away"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.5　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="osaka"></div>
+<div id="map-container">
+<h2>大阪の人気政府公認観光ガイド一覧</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="kyoto"></div>
+<div id="map-container">
+<h2>京都の人気政府公認観光ガイド一覧</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 5.0　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="fukuoka"></div>
+<div id="map-container">
+<h2>福岡の人気政府公認観光ガイド一覧</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.7　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="hokkaido"></div>
+<div id="map-container">
+<h2>北海道の人気政府公認観光ガイド一覧</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.5　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="okinawa"></div>
+<div id="map-container">
+<h2>沖縄の人気政府公認観光ガイド一覧</h2>
+<div class="guide-list">
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.8　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-priority toggle-tooltip">
+    ⭐ 4.9　最優先でご案内
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper with-award">
+    <div class="guide-avatar-online"></div>
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">小美さん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">I’ll show you around these sights.<br>
+      ぜひ私をガイドに選んでください</div>
+  </div>
+</a>
+
+<a href="en/diana.tanaka/index.html" class="guide-card" target="_blank">
+<div class="guide-video-container hidden">
+<iframe
+  class="guide-video"
+  src=""
+  data-src="https://www.youtube.com/embed/UkWd0azv3fQ?enablejsapi=1"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+  <button class="video-close-btn">✕</button>
+</div>
+  <div class="guide-rating level-high toggle-tooltip">
+    ⭐ 4.6　公式推奨
+    <span class="tooltip-icon tooltip-icon-ja"></span>
+  </div>
+  <div class="discount-badge">12％オフ</div>
+  <div class="tooltip-certified tooltip-certified-ja">✔ 認定済み</div>
+  <div class="guide-content">
+    <div class="guide-avatar-wrapper">
+    <div class="guide-avatar-away"></div>
+    <img src="https://randomuser.me/api/portraits/women/48.jpg" class="guide-avatar">
+    <div class="play-icon">▶</div>
+    </div>
+    <div class="guide-name">Diana Satoさん</div>
+    <div class="guide-languages">
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/us.png"> English</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/jp.png"> 日本語</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/de.png"> Deutsch</span>
+      <span class="lang-tag"><img src="https://flagcdn.com/w80/es.png"> Español</span>
+    </div>
+    <div class="guide-price">30,000円／日 - 3日間ツアー</div>
+    <div class="guide-price">20,000円 - 6時間ツアー</div>
+    <input type="submit" value="今すぐ予約・登録不要">
+    <div class="guide-note">予約は50%の前金のみでOK<br>残金は会ってからお支払い</div>
+  </div>
+</a>
+</div>
+</div>
+<p></p>
+
+<div id="stories"></div>
+<div id="map-container">
+<h2>お客様の声</h2>
+<div class="guide-list">
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_1.jpg" class="guest-img">
+  <div class="stars">★★★★★</div>
+  <b>Truly Personalized and Professional Service</b><br>
+  <div class="review">
+Guest Name: <b>David T.</b><br>
+Location: <b>United States</b><br>
+Visited in: <b>June 2025</b><br>
+<br>
+From start to finish, everything was seamless. What stood out was how the guide tailored their stories based on our group’s interests, especially my son, who loves architecture. It was a deeply enriching experience.
+We were also so glad we booked the private car service, it made everything incredibly convenient. 、
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_2.jpg" class="guest-img">
+  <div class="stars">★★★★★</div>
+  <b>Wonderful Support for Elderly Travelers</b><br>
+  <div class="review">
+Guest Name: <b>Margaret E.</b><br>
+Location: <b>United Kingdom</b><br>
+Visited in: <b>May 2025</b><br>
+<br>
+I traveled with my elderly mother and the guide team was so thoughtful. They planned extra rest stops, helped her walk, and constantly checked on her comfort. Their care gave us peace of mind the whole trip.
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_3.jpg" class="guest-img">
+  <div class="stars">★★★★★</div>
+  <b>超出期待的旅程體驗！！</b><br>
+  <div class="review">
+Guest Name: <b>Yating L.</b><br>
+Location: <b>Taiwan</b><br>
+Visited in: <b>March 2025</b><br>
+<br>
+超愛日本！
+導遊さん不只帶我們參觀熱門景點，還分享了很多只有在地人才知道的祕密故事，像是某個角落的建築背後原來有一段感人的歷史，聽完真的讓人印象深刻。整趟旅程不只是觀光，更像是深入了解當地文化的一次冒險。
+最讓我感動的是，他們事前偷偷問了我爸爸的生日，竟然在行程最後一天幫我們安排了一個小小的慶生驚喜！看到我爸笑得像個孩子，我們全家都快感動落淚了。
+我們已經計劃明年再來一次了！XXD
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_4.jpg" class="guest-img">
+  <div class="stars">★★★★☆</div>
+  <b>Best Local Food Recommendations Ever!</b><br>
+  <div class="review">
+Guest Name: <b>Jason W.</b><br>
+Location: <b>Canada</b><br>
+Visited in: <b>February 2025</b><br><br>
+Beyond the amazing sights, our guide took us to hidden local eateries that tourists would never find. Every meal was delicious and full of local flavor. The guide was not only knowledgeable, but also genuinely kind and helpful throughout the trip. Truly unforgettable!
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_5.jpg" class="guest-img">
+  <div class="stars">★★★★★</div>
+  <b>인생 최고의 가이드 경험이었습니다!</b><br>
+  <div class="review">
+Guest Name: <b>Kim J.</b><br>
+Location: <b>Korea</b><br>
+Visited in: <b>April 2025</b><br>
+<br>
+이번 투어는 정말 훌륭했습니다! 가이드분이 한국어도 조금 하셔서 마음이 놓였고, 질문에도 친절하게 답해주셨습니다. 역사 설명도 매우 이해하기 쉽게 해주셔서 더 깊이 있게 즐길 수 있었습니다. 다음에도 꼭 다시 이용하고 싶습니다!
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_6.jpg" class="guest-img">
+  <div class="stars">★★★★★</div>
+  <b>Una experiencia inolvidable gracias a nuestro guía</b><br>
+  <div class="review">
+Guest Name: <b>Carla M.</b><br>
+Location: <b>Mexico</b><br>
+Visited in: <b>July 2025</b><br>
+<br>
+El guía fue muy amable y atento durante todo el recorrido. Nos explicó con pasión cada lugar que visitamos y tuvo mucha paciencia con mis hijos pequeños. ¡Una experiencia que jamás olvidaremos!
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_7.jpg" class="guest-img">
+  <div class="stars">★★★★☆</div>
+  <b>Une visite exceptionnelle avec un guide passionné</b><br>
+  <div class="review">
+Guest Name: <b>Nicolas D.</b><br>
+Location: <b>France</b><br>
+Visited in: <b>February 2025</b><br><br>
+Beyond the amazing sights, our guide took us to hidden local eateries that tourists would never find. Every meal was delicious and full of local flavor. Truly unforgettable!
+  </div>
+  </div>
+</a>
+
+<a class="guide-card" target="_blank">
+  <div class="guide-content">
+  <img src="img/guest_8.jpg" class="guest-img">
+  <div class="stars">★★★★★</div>
+  <b>細心又專業的導覽服務。</b><br>
+  <div class="review">
+Guest Name: <b>Yun H.</b><br>
+Location: <b>Taiwan</b><br>
+Visited in: <b>January 2025</b><br>
+<br>
+真的是全程無微不至，不只準時、專業，還幫我們即時調整行程，避開人潮。整體安排非常貼心，賓士包車很舒服玩一天不感到累，包括交通時間都安排得剛剛好，休息點選得也很用心，沒有那種走馬看花的感覺。導遊除了專業，也非常有人情味，對小孩和長輩都非常有耐心。我們全家都非常滿意！如果你正在猶豫要不要預約他們的服務，我真心建議你不要錯過！這不只是一趟旅行，而是一段會讓你回味好久的美好回憶。
+  </div>
+  </div>
+</a>
+
+</div>
+<p></p>
+<div id="footer"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('© 2025 HAYAKU™ All rights reserved.', error));
+</script>
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/689f32c5fcd547192dde60de/1j2mtslos';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+</body>
+</html>
