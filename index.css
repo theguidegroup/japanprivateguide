@@ -396,10 +396,12 @@ transform: rotate(360deg);
 }
 
 .guide-rating.level-high {
+  height: 22px;
   background-color: #ff3399;
 }
 
 .guide-rating.level-priority {
+  height: 22px;
   background-color: #cc0066;
 }
 
