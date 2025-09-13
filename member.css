@@ -1,3 +1,13 @@
+    body {
+      font-family: 'Poppins', "MS Gothic", sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      margin: 0;
+    }
+
+    a:hover {
+      color:#cc0077;
+    }
 
     .top-section {
       display: flex;
