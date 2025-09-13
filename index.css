@@ -384,6 +384,7 @@ transform: rotate(360deg);
 }
 
 .guide-rating {
+  height: 22px;
   background-color: #ff3399;
   color: #fff;
   font-size: 0.85rem;
