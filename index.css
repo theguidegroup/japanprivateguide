@@ -815,7 +815,7 @@ input[type="submit"]:hover {
 
 .tooltip-recommended {
   position: absolute;
-  top: 32.5px;
+  top: 34px;
   right: -5px;
   background: linear-gradient(to right, #ee88ff, #cc00ff);
   color: #fff;
@@ -835,7 +835,7 @@ input[type="submit"]:hover {
 
 .tooltip-mostpopular {
   position: absolute;
-  top: 32.5px;
+  top: 34px;
   right: -5px;
   background: linear-gradient(to right, #ffaa00, #ff4400);
   color: #fff;
@@ -855,7 +855,7 @@ input[type="submit"]:hover {
 
 .tooltip-bestvalue {
   position: absolute;
-  top: 32.5px;
+  top: 34px;
   right: -5px;
   background: linear-gradient(to right, #00aaff, #0066ff);
   color: #fff;
@@ -875,7 +875,7 @@ input[type="submit"]:hover {
 
 .tooltip-vehicle {
   position: absolute;
-  top: 32.5px;
+  top: 34px;
   right: -5px;
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: #fff;
@@ -895,7 +895,7 @@ input[type="submit"]:hover {
 
 .tooltip-certified {
   position: absolute;
-  top: 32.5px;
+  top: 34px;
   right: -5px;
   background: linear-gradient(to right, #00c6ff, #0072ff);
   color: #fff;
