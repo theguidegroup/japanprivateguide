@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: #ff3399;
+  text-decoration: none;
+}
+
 a:hover {
   color:#cc0077;
 }
