@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Guide Group 公式招待ガイド様専用</title>
 <base href="https://japanprivateguide.com/">
 <link rel="shortcut icon" href="favicon.ico">
+<meta name="referrer" content="no-referrer">
 <style>
   html,body { height:100%; margin:0; font-family: Arial, sans-serif; }
   #loading-screen {
@@ -60,25 +61,16 @@
   const URL = 'https://app.formbricks.com/s/xcs9eutzco8xq3yxkmfemcef';
   const AUTO_DELAY = 3000; // ms
 
-  function popupFeatures(width = 1000, height = 700) {
-    const left = Math.max(0, Math.floor((screen.width - width) / 2));
-    const top = Math.max(0, Math.floor((screen.height - height) / 2));
-    return `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes,noopener,noreferrer`;
+  function redirectNow() {
+    window.location.replace(URL); // 不保留歷史紀錄
   }
 
-  function openPopup() {
-    const features = popupFeatures(1000, 700);
-    const win = window.open(URL, '_blank', features);
-    return win;
-  }
-
-  function onPopupOpened(win) {
+  function onRedirectStarted() {
     const loading = document.getElementById('loading-screen');
     if (loading) loading.style.display = 'none';
-    try { if (win && !win.closed) win.focus(); } catch(e){}
   }
 
-  function onPopupBlocked() {
+  function onRedirectBlocked() {
     const fallback = document.getElementById('fallback');
     const status = document.getElementById('status');
     if (status) status.textContent = ' ';
@@ -94,18 +86,20 @@
     }, 6000);
 
     setTimeout(function() {
-      const win = openPopup();
-      if (win) {
-        onPopupOpened(win);
-      } else {
-        onPopupBlocked();
+      try {
+        redirectNow();
+      } catch(e) {
+        onRedirectBlocked();
       }
     }, AUTO_DELAY);
   });
 
   document.getElementById('open-manual').addEventListener('click', function() {
-    const win = openPopup();
-    if (win) onPopupOpened(win);
+    try {
+      redirectNow();
+    } catch(e) {
+      onRedirectBlocked();
+    }
   });
 
 })();
