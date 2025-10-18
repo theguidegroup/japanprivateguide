@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!snowContainer || snowContainer.children.length >= 25) return;
     const wrapper = document.createElement('div');
     const snowflake = document.createElement('div');
-    snowflake.style.backgroundImage = `url('${Math.random() < 0.5 ? '../../img/sakura.png' : '../../img/sakura_full.png'}')`;
+    snowflake.style.backgroundImage = `url('${Math.random() < 0.5 ? 'img/sakura.png' : 'img/sakura_full.png'}')`;
     wrapper.classList.add('snow-wrapper');
     snowflake.classList.add('snowflake');
 
