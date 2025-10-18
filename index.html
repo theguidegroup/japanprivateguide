@@ -1,65 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-  <link rel="alternate" hreflang="en" href="https://japanprivateguide.com/en" />
-  <link rel="alternate" hreflang="ja" href="https://japanprivateguide.com/ja" />
-  <link rel="alternate" hreflang="ko" href="https://japanprivateguide.com/ko" />
-  <link rel="alternate" hreflang="zh-TW" href="https://japanprivateguide.com/zh-tw" />
-  <link rel="alternate" hreflang="x-default" href="https://japanprivateguide.com/en" />
-  <link rel="icon" href="/favicon.ico" />
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    #manualRedirect {
-      display: none;
-      margin-top: 20px;
-    }
-  </style>
+  <meta http-equiv="refresh" content="0; url=https://japanprivateguide.com/login">
+  <title>TGGへようこそ...</title>
 </head>
 <body>
-  <p style="color: #ff3399;">Redirecting...</p>
 
-  <noscript>
-    <p>Please <a href="https://japanprivateguide.com/en">click here</a> to visit the site.</p>
-  </noscript>
-
-  <div id="manualRedirect">
-    <p>If you are not redirected automatically, please choose your language:</p>
-    <ul style="list-style: none; padding-left: 0;">
-      <li><a href="https://japanprivateguide.com/en">English</a></li>
-      <li><a href="https://japanprivateguide.com/ja">日本語</a></li>
-      <li><a href="https://japanprivateguide.com/ko">한국어</a></li>
-      <li><a href="https://japanprivateguide.com/zh-tw">繁體中文</a></li>
-    </ul>
-  </div>
-
-  <script>
-    (function () {
-      try {
-        const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
-        let target = "https://japanprivateguide.com/en";
-        if (lang.startsWith("ja")) {
-          target = "https://japanprivateguide.com/ja";
-        } else if (lang.startsWith("ko")) {
-          target = "https://japanprivateguide.com/ko";
-        } else if (lang.startsWith("zh")) {
-          target = "https://japanprivateguide.com/zh-tw";
-        }
-        setTimeout(() => {
-          document.getElementById("manualRedirect").style.display = "block";
-        }, 3000);
-        window.location.href = target;
-      } catch(e) {
-        document.getElementById("manualRedirect").style.display = "block";
-      }
-    })();
-  </script>
 </body>
 </html>
