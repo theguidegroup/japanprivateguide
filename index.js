@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!snowContainer || snowContainer.children.length >= 25) return;
     const wrapper = document.createElement('div');
     const snowflake = document.createElement('div');
-    snowflake.style.backgroundImage = `url('${Math.random() < 0.5 ? 'img/sakura.png' : 'img/sakura_full.png'}')`;
+    snowflake.style.backgroundImage = `url('${Math.random() < 0.5 ? '../../img/sakura.png' : '../../img/sakura_full.png'}')`;
     wrapper.classList.add('snow-wrapper');
     snowflake.classList.add('snowflake');
 
@@ -280,13 +280,26 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------- Read More toggle ---------------- */
   const readToggle = document.getElementById('toggle-text');
   const aboutText = document.getElementById('about-text');
+
+  const lang = document.documentElement.lang || 'en';
+
   readToggle?.addEventListener('click', () => {
-    aboutText?.classList.toggle('expanded');
-    readToggle.textContent = aboutText?.classList.contains('expanded') ? 'Read Less' : 'Read More';
-  });
+  aboutText?.classList.toggle('expanded');
+  const isExpanded = aboutText?.classList.contains('expanded');
+
+  const moreText = readToggle.getAttribute(`data-more-${lang}`) || 'Read More';
+  const lessText = readToggle.getAttribute(`data-less-${lang}`) || 'Read Less';
+
+  readToggle.textContent = isExpanded ? lessText : moreText;
+});
 
   /* ---------------- Lightbox gallery ---------------- */
-  const galleryImages = Array.from(document.querySelectorAll('.image-grid img'));
+  const galleryImages = [
+  ...Array.from(document.querySelectorAll('.image-grid img, .sub-grid img'))
+];
+  const videoImg = new Image();
+  videoImg.src = '1.jpg';
+  galleryImages.unshift(videoImg);
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxClose = document.getElementById('lightbox-close');
@@ -300,7 +313,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   const showPrev = () => showImage((currentIndex - 1 + galleryImages.length) % galleryImages.length);
   const showNext = () => showImage((currentIndex + 1) % galleryImages.length);
-  galleryImages.forEach((img, index) => img.addEventListener('click', () => showImage(index)));
+  galleryImages.forEach((img, index) => {
+  if (index === 0) return;
+  img.addEventListener('click', () => showImage(index));
+  });
   lightboxClose?.addEventListener('click', () => lightbox.classList.add('hidden'));
   prevBtn?.addEventListener('click', showPrev);
   nextBtn?.addEventListener('click', showNext);

@@ -3,6 +3,7 @@ body {
   background-color: #fefefe;
   color: #333;
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -772,12 +773,32 @@ input[type="submit"]:hover {
   background: #fff;
 }
 
+.tooltip-icon-booking-en::after {
+  content: "Our private guided tour service is specially designed for small groups, with a recommended group size of up to 10–12 people. Whether you're traveling solo or with friends and family, we offer a fixed group rate, and pricing is not based on the number of participants, making it easier for you to plan your trip with peace of mind.";
+}
+
+.tooltip-icon-booking-ja::after {
+  content: "当社のプライベートガイドサービスは、小規模グループ向けに設計されており、推奨人数は最大10〜12名までとなっております。お一人様のご参加でも、ご家族やご友人とのグループ旅行でも、料金は一律のグループ料金となっており、人数によって価格は変わりません。人数を気にせず、安心してご旅行の計画を立てていただけます。";
+}
+
+.tooltip-icon-booking-ko::after {
+  content: "저희의 프라이빗 가이드 투어 서비스는 소규모 그룹을 위해 설계되었으며, 권장 인원은 최대 10~12명입니다. 혼자 여행하시든, 가족이나 친구들과 함께하시든 요금은 인원수에 관계없이 동일한 그룹 요금으로 책정됩니다. 인원수를 걱정하지 않고, 보다 자유롭게 여행 일정을 계획하실 수 있습니다.";
+}
+
+.tooltip-icon-booking-zh-tw::after {
+  content: "我們提供的私人導遊服務專為小型團體設計，建議人數上限為 10～12 人。無論您是一人獨旅，或是一群親友同行，我們皆採用固定團費制，不另按人數收費，讓您更輕鬆規劃行程。";
+}
+
+.tooltip-icon-booking-it::after {
+  content: "Il nostro servizio di tour privati con guida è pensato appositamente per piccoli gruppi, con un numero consigliato di partecipanti fino a 10–12 persone. Che tu stia viaggiando da solo o con amici e familiari, offriamo una tariffa fissa per gruppo, e il prezzo non varia in base al numero di partecipanti, rendendo più semplice organizzare il tuo viaggio in tutta tranquillità.";
+}
+
 .tooltip-icon-en::after {
   content: "This rating is provided by the guide group based on a comprehensive evaluation of the member’s service quality, communication, delivery record, and client feedback. It is not solely based on user reviews and is offered for reference only. It does not constitute a guarantee of service outcomes.";
 }
 
 .tooltip-icon-ja::after {
-  content: "この評価は、成員の対応品質、コミュニケーション、実績、および顧客からのフィードバックをもとに、本団体が総合的に判断した公式の推奨指標です。ユーザー評価のみに基づくものではなく、参考情報として提供されており、成果を保証するものではありません。";
+  content: "この評価は、メンバーの対応品質、コミュニケーション、実績、および顧客からのフィードバックをもとに、本グループが総合的に判断した公式の推奨指標です。ユーザー評価のみに基づくものではなく、参考情報として提供されており、成果を保証するものではありません。";
 }
 
 .tooltip-icon-ko::after {
@@ -786,6 +807,14 @@ input[type="submit"]:hover {
 
 .tooltip-icon-zh-tw::after {
   content: "本團體依據成員之服務品質、溝通表現、完成紀錄與客戶反饋進行綜合評估，提供此評分作為官方推薦指標。該評分並非完全根據客戶評價，僅供參考，亦不保證服務結果。";
+}
+
+.tooltip-icon-it::after {
+  content: "Questa valutazione viene fornita dal gruppo di guide basandosi su una valutazione complessiva della qualità del servizio del membro, della comunicazione, del rendimento e del feedback dei clienti. Non si basa esclusivamente sulle recensioni degli utenti ed è offerta solo a scopo informativo. Non costituisce una garanzia dei risultati del servizio.";
+}
+
+.tooltip-icon-en::after {
+  content: "This rating is provided by the guide group based on a comprehensive evaluation of the member’s service quality, communication, delivery record, and client feedback. It is not solely based on user reviews and is offered for reference only. It does not constitute a guarantee of service outcomes.";
 }
 
 .tooltip-icon-vehicle-en::after {
@@ -802,6 +831,10 @@ input[type="submit"]:hover {
 
 .tooltip-icon-vehicle-zh-tw::after {
   content: "本集團僅協助預約包車服務，實際包車服務由本集團合作夥伴公司提供並全權負責。請於服務當天，將包車費用直接支付給合作的司機。如有需要，您可通知導遊，導遊將協助您與司機聯絡。";
+}
+
+.tooltip-icon-vehicle-it::after {
+  content: "Il nostro gruppo si occupa solo di facilitare la prenotazione del servizio di noleggio auto con conducente. Il servizio di trasporto vero e proprio è fornito e gestito interamente dalla nostra compagnia partner. Si prega di pagare la tariffa direttamente all’autista il giorno del servizio. Se avete bisogno di assistenza, la vostra guida turistica potrà aiutarvi a comunicare con l’autista.";
 }
 
 .tooltip-icon::after {
