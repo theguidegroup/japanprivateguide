@@ -1,115 +1,189 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Contatti</title>
-<link rel="alternate" hreflang="en" href="https://japanprivateguide.com/en/contact">
-<link rel="alternate" hreflang="ja" href="https://japanprivateguide.com/ja/contact">
-<link rel="alternate" hreflang="ko" href="https://japanprivateguide.com/ko/contact">
-<link rel="alternate" hreflang="zh-TW" href="https://japanprivateguide.com/zh-tw/contact">
-<link rel="alternate" hreflang="it" href="https://japanprivateguide.com/it/contact">
-<link rel="alternate" hreflang="x-default" href="https://japanprivateguide.com/en/contact">
-<link rel="shortcut icon" href="../../favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGG サービス予約フロー（ガイド向け）</title>
 <script async data-id="101494630" src="//static.getclicky.com/js"></script>
 <style>
   body {
-    background-color: #ff7bbd;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
   }
-  
-  #loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+  header {
+    background-color: #ff3399;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  h2 {
+    color: #ff3399;
+    border-left: 6px solid #ff3399;
+    padding-left: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    color: #ff3399;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 0.5rem 0 1.5rem 0;
+  }
+
+  table {
     width: 100%;
-    height: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+
+  table th, table td {
+    border: 1px solid #ff3399;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  table th {
+    background-color: #ffe6f0;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #fff;
     background-color: #ff3399;
-    background-image: url('../../img/mount-fuji.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9998;
+    font-size: 0.9rem;
   }
 
-  .dots {
-    display: flex;
-    gap: 15px;
-  }
-
-  .dot {
-    width: 30px;
-    height: 30px;
-    background-color: #ff3399;
-    border-radius: 50%;
-    animation: bounce 0.6s infinite alternate;
-  }
-
-  .dot:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .dot:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  @keyframes bounce {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-20px);
-    }
+  .highlight {
+    color: #ff3399;
+    font-weight: bold;
   }
 </style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17720834255">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17720834255');
-</script>
 </head>
-<body style="background-color: #ff7bbd;">
+<body>
+<header>
+  <h1>TGG サービス予約流れと料金（ガイド向け）</h1>
+</header>
 
-<p style="text-align: center;"><img src="../../img/japan-private-guide_the-guide-group.png" width="300" height="85" style="max-width: 100%; height: auto; top: 300; z-index: 9999;"></p>
+<main>
+  <h2>🌸 サービス予約流れと料金</h2>
+  <p>
+    お客様はまずガイドページからサービスを予約し、<span class="highlight">TGGプラットフォームに予約金として33%</span>を支払います。残りの67%はツアー当日、お客様がガイドに直接、現金または PayPal / Payoneer で支払います。
+  </p>
+  <p>
+    予約金はガイドに支払われず、プラットフォーム手数料として充当されます。手数料の最終割合は、日数や時間数に応じて38〜46%で調整されます。 予約金はオンライン決済ツールおよび予約代行プラットフォームを通じて処理されます。サービス完了後にのみ、TGGが予約金を受領し、運営費と手数料の一部として取り扱います。ツアー終了後、ガイドは残額の差額を集計・報告し、延長料金の精算とあわせてPayPalでプラットフォームに支払います。
+  </p>
+  <p>
+    7日プランは割引率が最も高いため、ガイドの報酬水準を優先的に確保する目的で、本来の最低手数料率38%を下回る場合でも、当面はプラットフォーム側が手数料の一部を調整しています。そのため、現在の7日プランの手数料率は35%となっています。€51／時間の料金において、ガイドの実質的な報酬は約€33.15／時間となります。なお、料金は時期や運営コストの変動により調整される場合があります。
+  </p>
 
-<div id="loading-screen">
-  <div class="dots">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-  </div>
-</div>
+  <h3>料金例</h3>
+  <table>
+    <tr>
+      <th>日数/時間</th>
+      <th>1日 (ユーロ)</th>
+      <th>1時間 (ユーロ)</th>
+      <th>予約金33% (ユーロ)</th>
+      <th>サービス手数料</th>
+      <th>ガイド報酬 (ユーロ)</th>
+    </tr>
+    <tr>
+      <td>7日</td>
+      <td>€408/日（8時間）</td>
+      <td>€51/時間</td>
+      <td>€16.83/時間</td>
+      <td>35%</td>
+      <td>€33,15/時間</td>
+    </tr>
+    <tr>
+      <td>5日</td>
+      <td>€416/日（8時間）</td>
+      <td>€52/時間</td>
+      <td>€17,16/時間</td>
+      <td>38%</td>
+      <td>€32,24/時間</td>
+    </tr>
+    <tr>
+      <td>3日</td>
+      <td>€448/日（8時間）</td>
+      <td>€56/時間</td>
+      <td>€18,48/時間</td>
+      <td>42%</td>
+      <td>€32,48/時間</td>
+    </tr>
+    <tr>
+      <td>2日</td>
+      <td>€476/日（8時間）</td>
+      <td>€59,5/時間</td>
+      <td>€19,64/時間</td>
+      <td>44%</td>
+      <td>€33,32/時間</td>
+    </tr>
+    <tr>
+      <td>単発 1/4/6/8時間</td>
+      <td>€496/日（8時間）</td>
+      <td>€62/時間</td>
+      <td>€20,46/時間</td>
+      <td>46%</td>
+      <td>€33,48/時間</td>
+    </tr>
+  </table>
 
-<iframe src="https://app.formbricks.com/s/t5wwvmgyqa3runk57vffe1ef" width="100%" height="768" style="border-radius: 32px; border:none;"></iframe>
+  <p>
+    8日以上の長期予約（8〜10日）は7日分の料金基準に従います。ガイドは見積もり時に必ずウェブページ上の対応日数の料金と一致させてください。予約確定後、お客様にはガイドページ <b>https://japanprivateguide.com/it/nobu/booking</b> から予約を完了するよう案内し、支払い完了後は約束した日時にサービスを提供してください。
+  </p>
 
-<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      document.getElementById('loading-screen').style.display = 'none';
-    }, 2000);
-  });
-</script>
+  <h2>🌸 ガイド料金と実費</h2>
+  <ul>
+    <li>お客様はツアー当日にガイドへ直接支払います</li>
+    <li>支払対象：毎日のガイド料金、交通費・食費・宿泊費などの実費、超時費</li>
+  </ul>
 
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/689f32c5fcd547192dde60de/1j2mtslos';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+  <h2>🌸 延長料金の処理</h2>
+  <ul>
+    <li>延長料金は選択日数に応じた時間単価を基準に計算</li>
+    <li>100%ガイドの収入としてお客様が直接支払います</li>
+    <li>ツアー終了後、ガイドが集計・報告し、天数に応じた延長手数料を精算します</li>
+  </ul>
 
-<p style="text-align: center; font-size: 8pt; color: #fff;">© 2026 TGG All rights reserved.</p>
+  <h2>🌸 注意事項</h2>
+  <ul>
+    <li>予約金は原則返金不要（ガイドが提供不可の場合を除く）</li>
+    <li>料金や手数料は季節やコストの変動により若干異なる場合があります</li>
+    <li>お客様との支払いはツアー当日にガイドに直接行われます</li>
+  </ul>
+</main>
 
+<footer>
+  <span>※本情報はTGG内内部情報です。第三者への共有はご遠慮ください。</span><br>
+  © 2026 TGG rights reserved.<br>
+</footer>
 </body>
 </html>
