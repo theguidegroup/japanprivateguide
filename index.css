@@ -774,23 +774,27 @@ input[type="submit"]:hover {
 }
 
 .tooltip-icon-booking-en::after {
-  content: "Our private guided tour service is specially designed for small groups, with a recommended group size of up to 10–12 people. Whether you're traveling solo or with friends and family, we offer a fixed group rate, and pricing is not based on the number of participants, making it easier for you to plan your trip with peace of mind.";
+  content: "Our private guided tour service is specially designed for small groups, with a recommended group size of up to 1–12 people. Whether you're traveling solo or with friends and family, we offer a fixed group rate, and pricing is not based on the number of participants, making it easier for you to plan your trip with peace of mind.";
+}
+
+.tooltip-icon-booking-fr::after {
+  content: "Notre service de visites privées avec guide est conçu pour les petits groupes, avec un nombre recommandé de participants de 1 à 12 personnes. Que vous voyagiez seul ou accompagné de vos amis et famille, nous proposons un tarif fixe par groupe, quel que soit le nombre de participants, ce qui facilite l'organisation de votre voyage en toute sérénité.";
 }
 
 .tooltip-icon-booking-ja::after {
-  content: "当社のプライベートガイドサービスは、小規模グループ向けに設計されており、推奨人数は最大10〜12名までとなっております。お一人様のご参加でも、ご家族やご友人とのグループ旅行でも、料金は一律のグループ料金となっており、人数によって価格は変わりません。人数を気にせず、安心してご旅行の計画を立てていただけます。";
+  content: "当社のプライベートガイドサービスは、小規模グループ向けに設計されており、推奨人数は最大1〜12名までとなっております。お一人様のご参加でも、ご家族やご友人とのグループ旅行でも、料金は一律のグループ料金となっており、人数によって価格は変わりません。人数を気にせず、安心してご旅行の計画を立てていただけます。";
 }
 
 .tooltip-icon-booking-ko::after {
-  content: "저희의 프라이빗 가이드 투어 서비스는 소규모 그룹을 위해 설계되었으며, 권장 인원은 최대 10~12명입니다. 혼자 여행하시든, 가족이나 친구들과 함께하시든 요금은 인원수에 관계없이 동일한 그룹 요금으로 책정됩니다. 인원수를 걱정하지 않고, 보다 자유롭게 여행 일정을 계획하실 수 있습니다.";
+  content: "저희의 프라이빗 가이드 투어 서비스는 소규모 그룹을 위해 설계되었으며, 권장 인원은 최대 1~12명입니다. 혼자 여행하시든, 가족이나 친구들과 함께하시든 요금은 인원수에 관계없이 동일한 그룹 요금으로 책정됩니다. 인원수를 걱정하지 않고, 보다 자유롭게 여행 일정을 계획하실 수 있습니다.";
 }
 
 .tooltip-icon-booking-zh-tw::after {
-  content: "我們提供的私人導遊服務專為小型團體設計，建議人數上限為 10～12 人。無論您是一人獨旅，或是一群親友同行，我們皆採用固定團費制，不另按人數收費，讓您更輕鬆規劃行程。";
+  content: "我們提供的私人導遊服務專為小型團體設計，建議人數上限為 1～12 人。無論您是一人獨旅，或是一群親友同行，我們皆採用固定團費制，不另按人數收費，讓您更輕鬆規劃行程。";
 }
 
 .tooltip-icon-booking-it::after {
-  content: "Il nostro servizio di tour privati con guida è pensato appositamente per piccoli gruppi, con un numero consigliato di partecipanti fino a 10–12 persone. Che tu stia viaggiando da solo o con amici e familiari, offriamo una tariffa fissa per gruppo, e il prezzo non varia in base al numero di partecipanti, rendendo più semplice organizzare il tuo viaggio in tutta tranquillità.";
+  content: "Il nostro servizio di tour privati con guida è pensato appositamente per piccoli gruppi, con un numero consigliato di partecipanti fino a 1–12 persone. Che tu stia viaggiando da solo o con amici e familiari, offriamo una tariffa fissa per gruppo, e il prezzo non varia in base al numero di partecipanti, rendendo più semplice organizzare il tuo viaggio in tutta tranquillità.";
 }
 
 .tooltip-icon-en::after {
@@ -807,6 +811,10 @@ input[type="submit"]:hover {
 
 .tooltip-icon-zh-tw::after {
   content: "本團體依據成員之服務品質、溝通表現、完成紀錄與客戶反饋進行綜合評估，提供此評分作為官方推薦指標。該評分並非完全根據客戶評價，僅供參考，亦不保證服務結果。";
+}
+
+.tooltip-icon-fr::after {
+  content: "Cette évaluation est fournie par le groupe de guides, basée sur une appréciation globale de la qualité du service du membre, de la communication, des performances et des retours des clients. Elle ne repose pas uniquement sur les avis des utilisateurs et est donnée à titre informatif. Elle ne garantit pas les résultats du service.";
 }
 
 .tooltip-icon-it::after {
@@ -831,6 +839,10 @@ input[type="submit"]:hover {
 
 .tooltip-icon-vehicle-zh-tw::after {
   content: "本集團僅協助預約包車服務，實際包車服務由本集團合作夥伴公司提供並全權負責。請於服務當天，將包車費用直接支付給合作的司機。如有需要，您可通知導遊，導遊將協助您與司機聯絡。";
+}
+
+.tooltip-icon-vehicle-fr::after {
+  content: "Notre groupe se charge uniquement de faciliter la réservation du service de location de voiture avec chauffeur. Le service de transport proprement dit est entièrement fourni et géré par notre compagnie partenaire. Veuillez régler la tarification directement au chauffeur le jour du service. Si vous avez besoin d’assistance, votre guide touristique pourra vous aider à communiquer avec le chauffeur.";
 }
 
 .tooltip-icon-vehicle-it::after {
