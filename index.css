@@ -774,27 +774,35 @@ input[type="submit"]:hover {
 }
 
 .tooltip-icon-booking-en::after {
-  content: "Our private guided tour service is specially designed for small groups, with a recommended group size of up to 1–12 people. Whether you're traveling solo or with friends and family, we offer a fixed group rate, and pricing is not based on the number of participants, making it easier for you to plan your trip with peace of mind.";
+  content: "Our private guided tour service is specially designed for small groups, with a recommended group size of up to 1–15 people. Whether you're traveling solo or with friends and family, we offer a fixed group rate, and pricing is not based on the number of participants, making it easier for you to plan your trip with peace of mind.";
 }
 
 .tooltip-icon-booking-fr::after {
-  content: "Notre service de visites privées avec guide est conçu pour les petits groupes, avec un nombre recommandé de participants de 1 à 12 personnes. Que vous voyagiez seul ou accompagné de vos amis et famille, nous proposons un tarif fixe par groupe, quel que soit le nombre de participants, ce qui facilite l'organisation de votre voyage en toute sérénité.";
+  content: "Notre service de visites privées avec guide est conçu pour les petits groupes, avec un nombre recommandé de participants de 1 à 15 personnes. Que vous voyagiez seul ou accompagné de vos amis et famille, nous proposons un tarif fixe par groupe, quel que soit le nombre de participants, ce qui facilite l'organisation de votre voyage en toute sérénité.";
+}
+
+.tooltip-icon-booking-de::after {
+  content: "Unser privater Führungsservice ist speziell für kleine Gruppen konzipiert und eignet sich ideal für 1 bis 15 Personen. Ob Sie allein, mit Freunden oder mit der Familie reisen – wir bieten einen festen Gruppenpreis an. Der Preis richtet sich nicht nach der Anzahl der Teilnehmer, sodass Sie Ihre Reise transparent und sorgenfrei planen können.";
+}
+
+.tooltip-icon-booking-es::after {
+  content: "Nuestro servicio de visitas guiadas privadas está especialmente diseñado para grupos pequeños y es ideal para 1 a 15 personas. Ya sea que viaje solo, con amigos o en familia, ofrecemos una tarifa fija por grupo. El precio no depende del número de participantes, lo que le permite planificar su viaje con mayor tranquilidad y claridad.";
 }
 
 .tooltip-icon-booking-ja::after {
-  content: "当社のプライベートガイドサービスは、小規模グループ向けに設計されており、推奨人数は最大1〜12名までとなっております。お一人様のご参加でも、ご家族やご友人とのグループ旅行でも、料金は一律のグループ料金となっており、人数によって価格は変わりません。人数を気にせず、安心してご旅行の計画を立てていただけます。";
+  content: "当社のプライベートガイドサービスは、小規模グループ向けに設計されており、推奨人数は最大1〜15名までとなっております。お一人様のご参加でも、ご家族やご友人とのグループ旅行でも、料金は一律のグループ料金となっており、人数によって価格は変わりません。人数を気にせず、安心してご旅行の計画を立てていただけます。";
 }
 
 .tooltip-icon-booking-ko::after {
-  content: "저희의 프라이빗 가이드 투어 서비스는 소규모 그룹을 위해 설계되었으며, 권장 인원은 최대 1~12명입니다. 혼자 여행하시든, 가족이나 친구들과 함께하시든 요금은 인원수에 관계없이 동일한 그룹 요금으로 책정됩니다. 인원수를 걱정하지 않고, 보다 자유롭게 여행 일정을 계획하실 수 있습니다.";
+  content: "저희의 프라이빗 가이드 투어 서비스는 소규모 그룹을 위해 설계되었으며, 권장 인원은 최대 1~15명입니다. 혼자 여행하시든, 가족이나 친구들과 함께하시든 요금은 인원수에 관계없이 동일한 그룹 요금으로 책정됩니다. 인원수를 걱정하지 않고, 보다 자유롭게 여행 일정을 계획하실 수 있습니다.";
 }
 
 .tooltip-icon-booking-zh-tw::after {
-  content: "我們提供的私人導遊服務專為小型團體設計，建議人數上限為 1～12 人。無論您是一人獨旅，或是一群親友同行，我們皆採用固定團費制，不另按人數收費，讓您更輕鬆規劃行程。";
+  content: "我們提供的私人導遊服務專為小型團體設計，建議人數上限為 1～15 人。無論您是一人獨旅，或是一群親友同行，我們皆採用固定團費制，不另按人數收費，讓您更輕鬆規劃行程。";
 }
 
 .tooltip-icon-booking-it::after {
-  content: "Il nostro servizio di tour privati con guida è pensato appositamente per piccoli gruppi, con un numero consigliato di partecipanti fino a 1–12 persone. Che tu stia viaggiando da solo o con amici e familiari, offriamo una tariffa fissa per gruppo, e il prezzo non varia in base al numero di partecipanti, rendendo più semplice organizzare il tuo viaggio in tutta tranquillità.";
+  content: "Il nostro servizio di tour privati con guida è pensato appositamente per piccoli gruppi, con un numero consigliato di partecipanti fino a 1–15 persone. Che tu stia viaggiando da solo o con amici e familiari, offriamo una tariffa fissa per gruppo, e il prezzo non varia in base al numero di partecipanti, rendendo più semplice organizzare il tuo viaggio in tutta tranquillità.";
 }
 
 .tooltip-icon-en::after {
@@ -815,6 +823,10 @@ input[type="submit"]:hover {
 
 .tooltip-icon-fr::after {
   content: "Cette évaluation est fournie par le groupe de guides, basée sur une appréciation globale de la qualité du service du membre, de la communication, des performances et des retours des clients. Elle ne repose pas uniquement sur les avis des utilisateurs et est donnée à titre informatif. Elle ne garantit pas les résultats du service.";
+}
+
+.tooltip-icon-it::after {
+  content: "Questa valutazione viene fornita dal gruppo di guide basandosi su una valutazione complessiva della qualità del servizio del membro, della comunicazione, del rendimento e del feedback dei clienti. Non si basa esclusivamente sulle recensioni degli utenti ed è offerta solo a scopo informativo. Non costituisce una garanzia dei risultati del servizio.";
 }
 
 .tooltip-icon-it::after {
@@ -847,6 +859,14 @@ input[type="submit"]:hover {
 
 .tooltip-icon-vehicle-it::after {
   content: "Il nostro gruppo si occupa solo di facilitare la prenotazione del servizio di noleggio auto con conducente. Il servizio di trasporto vero e proprio è fornito e gestito interamente dalla nostra compagnia partner. Si prega di pagare la tariffa direttamente all’autista il giorno del servizio. Se avete bisogno di assistenza, la vostra guida turistica potrà aiutarvi a comunicare con l’autista.";
+}
+
+.tooltip-icon-vehicle-de::after {
+  content: "Unsere Gruppe übernimmt lediglich die Vermittlung der Buchung des Fahrdienstes. Der tatsächliche Transport wird vollständig von unserem Partnerunternehmen bereitgestellt und durchgeführt. Bitte zahlen Sie die Gebühr direkt an den Fahrer am Tag des Service. Wenn Sie Hilfe benötigen, kann Ihr Reiseleiter Ihnen bei der Kommunikation mit dem Fahrer behilflich sein.";
+}
+
+.tooltip-icon-vehicle-es::after {
+  content: "Nuestro grupo solo se encarga de facilitar la reserva del servicio de alquiler de auto con conductor. El servicio de transporte propiamente dicho es proporcionado y gestionado íntegramente por nuestra compañía asociada. Por favor, pague la tarifa directamente al conductor el día del servicio. Si necesita asistencia, su guía turístico podrá ayudarle a comunicarse con el conductor.";
 }
 
 .tooltip-icon::after {
