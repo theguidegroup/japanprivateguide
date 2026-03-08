@@ -419,7 +419,7 @@ transform: rotate(360deg);
   border-radius: 50%;
   border: 1px solid #ff69b4;
 }
-
+/*
 .guide-avatar-wrapper::after {
   content: '▶';
   position: absolute;
@@ -441,7 +441,7 @@ transform: rotate(360deg);
   border: 1px solid rgba(255, 255, 255, 0.9);
   z-index: 2;
 }
-
+*/
 .guide-avatar-wrapper:hover::after {
   opacity: 1;
 }
@@ -459,6 +459,7 @@ transform: rotate(360deg);
   object-fit: cover;
   display: block;
   z-index: 1;
+  pointer-events: none;
 }
 
 .guide-avatar-wrapper img:hover {
@@ -804,9 +805,9 @@ input[type="submit"]:hover {
 .tooltip-icon-booking-it::after {
   content: "Il nostro servizio di tour privati con guida è pensato appositamente per piccoli gruppi, con un numero consigliato di partecipanti fino a 1–15 persone. Che tu stia viaggiando da solo o con amici e familiari, offriamo una tariffa fissa per gruppo, e il prezzo non varia in base al numero di partecipanti, rendendo più semplice organizzare il tuo viaggio in tutta tranquillità.";
 }
-
+å
 .tooltip-icon-en::after {
-  content: "This rating is provided by the guide group based on a comprehensive evaluation of the member’s service quality, communication, delivery record, and client feedback. It is not solely based on user reviews and is offered for reference only. It does not constitute a guarantee of service outcomes.";
+  content: "This rating is provided by TGG based on a comprehensive evaluation of the member’s service quality, communication, delivery record, and client feedback. It is not solely based on user reviews and is offered for reference only. It does not constitute a guarantee of service outcomes.";
 }
 
 .tooltip-icon-ja::after {
@@ -834,7 +835,7 @@ input[type="submit"]:hover {
 }
 
 .tooltip-icon-en::after {
-  content: "This rating is provided by the guide group based on a comprehensive evaluation of the member’s service quality, communication, delivery record, and client feedback. It is not solely based on user reviews and is offered for reference only. It does not constitute a guarantee of service outcomes.";
+  content: "This rating is provided by TGG based on a comprehensive evaluation of the member’s service quality, communication, delivery record, and client feedback. It is not solely based on user reviews and is offered for reference only. It does not constitute a guarantee of service outcomes.";
 }
 
 .tooltip-icon-vehicle-en::after {
@@ -988,19 +989,19 @@ input[type="submit"]:hover {
 }
 
 .tooltip-certified-en::after {
-  content: "This guide is certified and endorsed by The Guide Group, demonstrating international-level professionalism and service excellence.";
+  content: "This guide is certified and endorsed by TGG, demonstrating international-level professionalism and service excellence.";
 }
 
 .tooltip-certified-ja::after {
-  content: "本ガイドは The Guide Group により認定および推薦されており、国際水準の専門性とサービス品質を備えています。";
+  content: "本ガイドは TGG により認定および推薦されており、国際水準の専門性とサービス品質を備えています。";
 }
 
 .tooltip-certified-ko::after {
-  content: "본 가이드는 The Guide Group의 인증과 추천을 받은 국제 수준의 전문성과 서비스 품질을 갖춘 전문가입니다.";
+  content: "본 가이드는 TGG의 인증과 추천을 받은 국제 수준의 전문성과 서비스 품질을 갖춘 전문가입니다.";
 }
 
 .tooltip-certified-zh-tw::after {
-  content: "本導遊榮獲 The Guide Group 認證與推薦，具備國際級專業素養與服務水準。";
+  content: "本導遊榮獲 TGG 認證與推薦，具備國際級專業素養與服務水準。";
 }
 
 .tooltip-certified::after {
