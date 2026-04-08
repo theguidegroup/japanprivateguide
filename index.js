@@ -291,15 +291,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const lessText = readToggle.getAttribute(`data-less-${lang}`) || 'Read Less';
 
   readToggle.textContent = isExpanded ? lessText : moreText;
-});
+  });
 
   /* ---------------- Lightbox gallery ---------------- */
   const galleryImages = [
   ...Array.from(document.querySelectorAll('.image-grid img, .sub-grid img'))
-];
-  const videoImg = new Image();
-  videoImg.src = '1.jpg';
-  galleryImages.unshift(videoImg);
+  ];
+  const firstImage = document.querySelector('.top-section img');
+  if (firstImage) {
+  galleryImages.unshift(firstImage);
+  };
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxClose = document.getElementById('lightbox-close');
@@ -308,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentIndex = 0;
   const showImage = (index) => {
     currentIndex = index;
-    lightboxImg.src = galleryImages[index].src;
+    lightboxImg.src = galleryImages[index].getAttribute('data-src');
     lightbox.classList.remove('hidden');
   };
   const showPrev = () => showImage((currentIndex - 1 + galleryImages.length) % galleryImages.length);
