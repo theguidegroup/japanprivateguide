@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://japanprivateguide.com/en">
-  <title>Japan Private Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a professional private tour guide in Japan. Personalized itineraries, local experiences, and flexible private tours in English, French, German, Spanish, and Italian">
+  <title>Japan Private Guide - Private Tour Guide in Japan | English, French, German, Spanish, and Italian Tours</title>
   <link rel="shortcut icon" href="favicon.ico">
   <script async data-id="101494630" src="//static.getclicky.com/js"></script>
 </head>
 <body>
+
+<script>
+(function () {
+
+  const lang = navigator.language || navigator.userLanguage;
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+  const isJapaneseLang = lang.toLowerCase().startsWith("ja");
+  const isJapanTimezone = timezone === "Asia/Tokyo";
+
+  const isJapanUser = isJapaneseLang && isJapanTimezone;
+
+  setTimeout(() => {
+
+    if (isJapanUser) {
+      window.location.replace("/login");
+    } else {
+      window.location.replace("/en");
+    }
+
+  }, 50);
+
+})();
+</script>
 
 </body>
 </html>
