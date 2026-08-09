@@ -251,6 +251,12 @@ text-decoration: none;
 .btn-a { background: #ff3399; color: #fff; }
 .nav-right .btn:hover { background: #ff7bbd; }
 
+.btn-a:hover,
+.btn-a:focus {
+    background: #ff66aa;
+    color: #fff;
+}
+
 .bg-left {
   position: fixed;
   top: 70px;
