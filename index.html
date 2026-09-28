@@ -5,18 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Redirecting...</title>
-  <link rel="alternate" hreflang="en" href="https://japanprivateguide.com/en" />
-  <link rel="alternate" hreflang="ja" href="https://japanprivateguide.com/login" />
-
-  <link rel="shortcut icon" href="favicon.ico">
-
-  <script async data-id="101494630" src="//static.getclicky.com/js"></script>
 
   <script>
     (function () {
-      const lang = (navigator.language || "").toLowerCase();
+      "use strict";
 
-      if (lang.startsWith("ja")) {
+      const languages = Array.isArray(navigator.languages)
+        ? navigator.languages
+        : [navigator.language || ""];
+
+      const isJapaneseLanguage = languages.some(function (lang) {
+        return /^ja(?:-|$)/i.test(String(lang).trim());
+      });
+
+      const timezone = (() => {
+        try {
+          return Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+        } catch (e) {
+          return "";
+        }
+      })();
+
+      const isJapanTimezone = timezone === "Asia/Tokyo";
+
+      const locale = (() => {
+        try {
+          return Intl.DateTimeFormat().resolvedOptions().locale || "";
+        } catch (e) {
+          return navigator.language || "";
+        }
+      })();
+
+      const isJapanLocale =
+        /^ja-JP$/i.test(locale) ||
+        /^ja-JP-/i.test(locale);
+
+      const isJapan = isJapanTimezone || isJapanLocale;
+
+      if (isJapan && isJapaneseLanguage) {
         window.location.replace("/login");
       } else {
         window.location.replace("/en");
@@ -24,11 +50,11 @@
     })();
   </script>
 
-</head>
-
-<body>
   <noscript>
     <meta http-equiv="refresh" content="0; url=/en">
   </noscript>
+</head>
+
+<body>
 </body>
 </html>
