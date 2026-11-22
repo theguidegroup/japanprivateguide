@@ -1,109 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Booking</title>
-<link rel="shortcut icon" href="../../../favicon.ico">
-<script async data-id="101494630" src="//static.getclicky.com/js"></script>
-<style>
-  body {
-    background-color: #ff7bbd;
-  }
-  
-  #loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ff3399;
-    background-image: url('../../../img/mount-fuji.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9998;
-  }
-
-  .dots {
-    display: flex;
-    gap: 15px;
-  }
-
-  .dot {
-    width: 30px;
-    height: 30px;
-    background-color: #ff3399;
-    border-radius: 50%;
-    animation: bounce 0.6s infinite alternate;
-  }
-
-  .dot:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .dot:nth-child(3) {
-    animation-delay: 0.4s;
-  }
-
-  @keyframes bounce {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-20px);
-    }
-  }
-</style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '');
-</script>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="referrer" content="no-referrer">
+  <title>Secure Payment</title>
+  <link rel="shortcut icon" href="../../../../favicon.ico">
+  <link rel="stylesheet" href="../../../../style.css">
+  <link rel="stylesheet" href="../../../../index.css">
+  <script async data-id="101494630" src="//static.getclicky.com/js"></script>
 </head>
-<body style="background-color: #ff7bbd;">
+<body>
 
-<p style="text-align: center;"><img src="../../../img/japan-private-guide_the-guide-group.png" width="300" height="85" style="max-width: 100%; height: auto; top: 300; z-index: 9999;"></p>
-
-<div id="loading-screen">
-  <div class="dots">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
+  <div style="height: 20px;"></div>
+  <h1 style="text-align: center;">Private Tour Guide Service</h1>
+  <h2 style="text-align: center;">Secure Payment</h2>
+  <div style="max-width: 1024px; margin: 1rem auto; line-height: 1.8; color: #dd3399; font-size: 10pt; text-align: center; padding: 0 1rem;">
+    
   </div>
-</div>
+  <form id="loginForm" method="POST" class="form" style="text-align: center;" novalidate>
+    <img src="../../avatar.jpg" class="guide-avatar" style="margin-bottom: 8px;">
+    <label for="text"><font style="font-size: 16pt;">Mariko Minamimoto</font><br>Japan National Licensed Guide Interpreter</label>
+    <img src="../../licensed.jpg" width="300" height="auto" style="border-radius: 15px;">
+    <p>Order ID: <b>en-20261023-10056</b></p>
+    <p>Total tour duration: <b>Tokyo 2-Day Tour (16 hours)</b>2/3 April 2027<br><b>Kyoto 2-Day Tour (16 hours)</b>4/5 April 2027</p>
+    <p>Tokyo: <b>USD $896 (JPY ¥142,500 to be paid on the day of the tour JPY or USD)</b></p>
+    <p>Kyoto: <b>USD $896 (JPY ¥142,500 to be paid on the day of the tour JPY or USD)</b></p>
+    <p>Total: <b>USD $1,792 (JPY ¥285,000 to be paid on the day of the tour JPY or USD)</p>
+    <p></p>
+    <p></p>
+    <img src="../../../../img/payment.png" width="60%" height="auto">
+    <p style="color: #dd3399; font-size: 10pt;">The total price includes all fees, with no additional charges.</p>
+  </form>
 
-<iframe src="https://app.formbricks.com/s/jmc08gd7qcx95uisq1nqmhc2" width="100%" height="768" style="border-radius: 32px; border:none;"></iframe>
-
-<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      document.getElementById('loading-screen').style.display = 'none';
-    }, 1500);
-  });
-</script>
-
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/689f32c5fcd547192dde60de/1j2mtslos';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-
-<p style="text-align: center; font-size: 8pt; color: #fff;">© 2026 TGG All rights reserved.</p>
+  <div class="copyright">
+  <br>
+  <br>© 2026 TGG All rights reserved.
+  </div>
 
 </body>
 </html>
